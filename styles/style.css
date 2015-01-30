@@ -419,6 +419,59 @@ ul, ol {
     line-height: 0;
 }
 
+.head-banner {
+    text-shadow: 0px 2px 3px #000;
+    padding-top: 8%;
+}
+.head-banner address {
+    margin-top: 1%;
+}
+
+.head-banner time {
+    display: block;
+    border: 0;
+    font-size: 80%;
+    line-height: 140%;
+}
+
+.head-banner h1 {
+    font-size: 480%;
+    font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
+    line-height: 90%;
+    margin-top: 8%;
+}
+
+.head-banner {
+    background-color: #33363b;
+    color: #ccc;
+    font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
+    padding-bottom: 6%;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+@media screen and (min-device-width: 401px) and (min-width: 401px) .portlouis {
+    background: url(/img/portlouis.jpg) no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover;
+}
+
+.portlouis {
+    background: url(/img/portlouis.jpg) no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.grid-100 {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
 .muted {
     color: #999;
 }
@@ -644,6 +697,14 @@ ul, ol {
 
 @media (max-width: 979px) {
 
+    .head-banner img {
+        visibility: hidden;
+    }
+
+    .head-banner h1 {
+        font-size: 36px;
+    }
+
     .container.navbar-wrapper {
         margin-bottom: 0;
         width: auto;
@@ -679,6 +740,14 @@ ul, ol {
 
 
 @media (max-width: 767px) {
+
+    .head-banner img {
+        visibility: hidden;
+    }
+
+    .head-banner h1 {
+        font-size: 36px;
+    }
 
     .navbar-inner {
         margin: -20px;
