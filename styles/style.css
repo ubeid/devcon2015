@@ -422,26 +422,6 @@ ul, ol {
 .head-banner {
     text-shadow: 0px 2px 3px #000;
     padding-top: 8%;
-}
-.head-banner address {
-    margin-top: 1%;
-}
-
-.head-banner time {
-    display: block;
-    border: 0;
-    font-size: 80%;
-    line-height: 140%;
-}
-
-.head-banner h1 {
-    font-size: 480%;
-    font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
-    line-height: 90%;
-    margin-top: 8%;
-}
-
-.head-banner {
     background-color: #33363b;
     color: #ccc;
     font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
@@ -450,6 +430,24 @@ ul, ol {
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+}
+.head-banner address {
+    margin-top: 1%;
+    font-size: 160%;
+}
+
+.head-banner time {
+    display: block;
+    border: 0;
+    font-size: 140%;
+    line-height: 140%;
+}
+
+.head-banner h1 {
+    font-size: 480%;
+    font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
+    line-height: 90%;
+    margin-top: 8%;
 }
 
 @media screen and (min-device-width: 401px) and (min-width: 401px) .portlouis {
