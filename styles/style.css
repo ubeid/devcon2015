@@ -468,6 +468,10 @@ ul, ol {
     /*border-bottom: 1px solid #ccc;*/
 }
 
+#copyright img {
+    margin: 0 2%;
+}
+
 #nav-bottom ul {
     list-style: none;
 }
