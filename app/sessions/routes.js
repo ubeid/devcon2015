@@ -14,20 +14,13 @@ function (angular, app, Sessions) {
                     abstract: true,
                     url: '/sessions',
                     templateUrl: 'app/sessions/session.html',
-                    //resolve: {
-                    //    entries: [Sessions + '.sessionService',
-                    //      function (sessions) {
-                    //          sessions.getList("1");
-                    //          return sessions.entries;
-                    //      }]
-                    //},
                     controller: Sessions + '.sessionController'
                 })
 
                 .state('sessions.list', {
                     url: '',
                     templateUrl: 'app/sessions/session.day.html'
-        })
+                })
 
                 .state('sessions.day', {
                     url: '/{dayId:[0-9]{1}}',
