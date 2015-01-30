@@ -13,6 +13,18 @@ function (angular, app, Sessions) {
                 .state('sessions', {
                     abstract: true,
                     url: '/sessions',
+                    templateUrl: 'app/templates/ui-view.html',
+                    controller: Sessions + '.sessionController'
+                })
+
+                .state('sessions.cfp', {
+                    url: '',
+                    templateUrl: 'app/sessions/session.cfp.html'
+                })
+
+                .state('sessions2', {
+                    abstract: true,
+                    url: '/sessions',
                     templateUrl: 'app/sessions/session.html',
                     controller: Sessions + '.sessionController'
                 })

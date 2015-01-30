@@ -103,7 +103,7 @@ dfn {
 }
 
 hr {
-    margin: 4em 0;
+    margin: 2.4em 0;
 }
 
 ins {
@@ -450,10 +450,6 @@ ul, ol {
     margin-top: 8%;
 }
 
-@media screen and (min-device-width: 401px) and (min-width: 401px) .portlouis {
-    background: url(/img/portlouis.jpg) no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover;
-}
-
 .portlouis {
     background: url(/img/portlouis.jpg) no-repeat;
     -moz-background-size: cover;
@@ -675,7 +671,16 @@ ul, ol {
         padding: 30px;
     }
 
-
+.cfp h3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.cfp ul, .cfp ol {
+    padding: 0 0 0 40px;
+}
+.cfp ul {
+    list-style: disc;
+}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -685,6 +690,10 @@ ul, ol {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+}
+
+@media screen and (min-device-width: 401px) and (min-width: 401px) .portlouis {
+    background: url(/img/portlouis.jpg) no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover;
 }
 
 @media (min-width: 768px) {

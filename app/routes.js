@@ -7,7 +7,7 @@
 ],
 function (angular, app) {
     'use strict';
-    
+
     var loReturn = app.config([
         '$stateProvider',
         '$urlRouterProvider',
@@ -17,7 +17,8 @@ function (angular, app) {
 
             $stateProvider
                 .state('home', {
-                    url: '/'
+                    url: '/',
+                    templateUrl: 'app/templates/frontpage.html'
                 });
         }
     ]);
