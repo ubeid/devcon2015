@@ -3,7 +3,8 @@
 	'app',
     './sessions/routes',
     './speakers/routes',
-    './sponsors/routes'
+    './sponsors/routes',
+    './venues/routes'
 ],
 function (angular, app) {
     'use strict';

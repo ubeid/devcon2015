@@ -9,7 +9,8 @@
         './templates/module.require',
         './sessions/module.require',
         './speakers/module.require',
-        './sponsors/module.require'
+        './sponsors/module.require',
+        './venues/module.require'
     ],
     function (
 		angular,
@@ -22,7 +23,8 @@
         Templates,
         Sessions,
         Speakers,
-        Sponsors
+        Sponsors,
+        Venues
 	) {
         'use strict';
         var app = angular.module(namespace,
@@ -32,7 +34,8 @@
            'uiGmapgoogle-maps',
            Sessions,
            Speakers,
-           Sponsors
+           Sponsors,
+           Venues
 		]).run(function () {
 		});
         return app;
