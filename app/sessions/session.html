@@ -1,0 +1,14 @@
+﻿<hr class="featurette-divider" id="agenda">
+<div class="featurette">
+    <h2 class="featurette-heading">The Agenda<br /><span class="muted">Preliminary Schedule of Sessions</span></h2>
+    <p class="lead">
+        We’re working hard to finalize the full agenda of sessions & events.<br />
+        In the meantime, here's a preliminary agenda.
+    </p>
+    <ul class="nav nav-tabs">
+        <li role="presentation" ng-repeat="day in days" ui-sref-active="active">
+            <a ui-sref="sessions.day({dayId:day.id})">{{day.name}}</a>
+        </li>
+    </ul>
+    <div ui-view></div>
+</div>

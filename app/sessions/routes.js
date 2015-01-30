@@ -11,33 +11,28 @@ function (angular, app, Sessions) {
         function ($stateProvider) {
             $stateProvider
                 .state('sessions', {
+                    abstract: true,
                     url: '/sessions',
-                    templateUrl: 'app/sessions/session.list.html',
+                    templateUrl: 'app/sessions/session.html',
+                    //resolve: {
+                    //    entries: [Sessions + '.sessionService',
+                    //      function (sessions) {
+                    //          sessions.getList("1");
+                    //          return sessions.entries;
+                    //      }]
+                    //},
                     controller: Sessions + '.sessionController'
                 })
-                .state('sessions.day1', {
-                    url: '/thursday',
-                    templateUrl: 'app/sessions/session.list.thursday.html',
-                    controller: Sessions + '.sessionController',
-                    data: {
-                        day: 1
-                    }
-                })
-                .state('sessions.day2', {
-                    url: '/friday',
-                    templateUrl: 'app/sessions/session.list.friday.html',
-                    controller: Sessions + '.sessionController',
-                    data: {
-                        day: 2
-                    }
-                })
-                .state('sessions.day3', {
-                    url: '/saturday',
-                    templateUrl: 'app/sessions/session.list.saturday.html',
-                    controller: Sessions + '.sessionController',
-                    data: {
-                        day: 3
-                    }
+
+                .state('sessions.list', {
+                    url: '',
+                    templateUrl: 'app/sessions/session.day.html'
+        })
+
+                .state('sessions.day', {
+                    url: '/{dayId:[0-9]{1}}',
+                    templateUrl: 'app/sessions/session.day.html',
+                    controller: Sessions + '.sessionController'
                 });
         }
     ]);
