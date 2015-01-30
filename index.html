@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Developers Conference 2015 - Mauritius</title>
+    <meta name="description" content="The Developers Conference 2015 is a 3-day event going to take place between the 23rd and the 25th of April 2015.
+          The Mauritius Software Craftsmanship Community (MSCC) is going to organise this event in corporation with local and international sponsors and partners.">
+
+    <!-- Place favicon.ico and mscc-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Chrome Touch Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="img/mscc-touch-icon-192x192.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Apple Touch Icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Global Azure Bootcamp 2015 - Mauritius">
+    <link rel="mscc-touch-icon" href="img/mscc-touch-icon.png" />
+    <link rel="mscc-touch-icon-precomposed" href="img/mscc-touch-icon-precomposed.png" />
+    <link rel="mscc-touch-icon" sizes="57x57" href="img/mscc-touch-icon-57x57.png" />
+    <link rel="mscc-touch-icon" sizes="72x72" href="img/mscc-touch-icon-72x72.png" />
+    <link rel="mscc-touch-icon" sizes="114x114" href="img/mscc-touch-icon-114x114.png" />
+    <link rel="mscc-touch-icon" sizes="144x144" href="img/mscc-touch-icon-144x144.png" />
+    <link rel="mscc-touch-icon" sizes="60x60" href="img/mscc-touch-icon-60x60.png" />
+    <link rel="mscc-touch-icon" sizes="120x120" href="img/mscc-touch-icon-120x120.png" />
+    <link rel="mscc-touch-icon" sizes="76x76" href="img/mscc-touch-icon-76x76.png" />
+    <link rel="mscc-touch-icon" sizes="152x152" href="img/mscc-touch-icon-152x152.png" />
+
+    <!-- Windows 8 Tile Icons -->
+    <meta name="msapplication-square70x70logo" content="img/mscc-ms-smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="img/mscc-ms-mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="img/mscc-ms-widetile.png" />
+    <meta name="msapplication-square310x310logo" content="img/mscc-ms-largetile.png" />
+    <!-- Pinned Site -->
+    <meta name="application-name" content="Developers Conference 2015 - Mauritius">
+    <meta name="msapplication-tooltip" content="The Mauritius Software Craftsmanship Community (MSCC) organises the Developers Conference 2015 in Mauritius.">
+    <meta name="msapplication-starturl" content="http://devconmru.azurewebsites.net/?pinned=true">
+
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="styles/kendoui/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendoui/kendo.default.min.css" />-->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+    <!-- All JavaScript at the bottom, except this Modernizr build.
+         Modernizr enables HTML5 elements & feature detects for optimal performance.
+         Create your own custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="libs/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+         chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <header>
+        <div ng-include="'./app/templates/header.html'"></div>
+    </header>
+
+    <div role="main">
+        <div class="container">
+
+            <div ui-view></div>
+
+            <div ng-include="'./app/templates/mscc.html'"></div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="pad">
+            <div id="copyright">
+                <p>
+                    <img src="img/mscc-footer.png" alt="Mauritius Software Craftsmanship Community" height="36" width="36" />
+                    <a href="http://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/" target="_blank">Mauritius Software Craftsmanship Community</a>
+                </p>
+            </div><!--/#copyright-->
+            <div id="nav-bottom">
+                <ul>
+                    <li><a href="" class="email obfuscated" data-email="mscc kirstaetter name">Contact Us</a></li>
+                    <li><a href="http://www.meetup.com/MauritiusSoftwareCraftsmanshipCommunity/pages/Code_of_Conduct" target="_blank">Code of Conduct</a></li>
+                    <li><a href="https://twitter.com/MSCraftsman" target="_blank">Follow @MSCraftsman</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="libs/require/2.1.10/require.js" data-main="app/main"> </script>
+
+    <!-- Asynchronous Google Universal Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+         mathiasbynens.be/notes/async-analytics-snippet -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-12103827-8', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>

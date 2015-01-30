@@ -1,0 +1,18 @@
+﻿<view>
+    <content>
+        <hr class="featurette-divider" id="speakers">
+        <div class="featurette">
+            <h2 class="featurette-heading">The Speakers<br /><span class="muted"></span></h2>
+            <p class="lead">
+                
+            </p>
+            <ol id="speaker" class="list">
+                <li class="list-item list-item-speaker" ng-repeat="entry in entries">
+                    <img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}} ({{entry.gsx$nickname.$t}})">
+                    <h3 class="">{{entry.gsx$fullname.$t}}<span class="muted"> - {{entry.gsx$nickname.$t}}</span></h3>
+                    <p>{{entry.gsx$abstract.$t}}</p>
+                </li>
+            </ol>
+        </div>
+    </content>
+</view>

@@ -1,0 +1,24 @@
+﻿<view>
+    <content>
+        <hr class="featurette-divider" id="agenda">
+        <div class="featurette">
+            <h2 class="featurette-heading">The Agenda<br /><span class="muted">Preliminary Schedule of Sessions</span></h2>
+            <p class="lead">
+                We’re working hard to finalize the full agenda of sessions & events.<br />
+                In the meantime, here's a preliminary agenda.
+            </p>
+            <ul class="nav nav-tabs">
+                <li role="presentation"><a ui-sref=".day1">Thursday</a></li>
+                <li role="presentation"><a ui-sref=".day2">Friday</a></li>
+                <li role="presentation" class="active"><a ui-sref=".day3">Saturday</a></li>
+            </ul>
+            <ol id="day-1" class="list">
+                <li class="list-item list-item-agenda" ng-repeat="entry in entries">
+                    <time class="time-slot">{{entry.gsx$time.$t}}</time>
+                    <h3 class="time-info time-info-full">{{entry.gsx$title.$t}}<span class="muted"> - {{entry.gsx$speaker.$t}}</span></h3>
+                    <p>{{entry.gsx$abstract.$t}}</p>
+                </li>
+            </ol>
+        </div>
+    </content>
+</view>
