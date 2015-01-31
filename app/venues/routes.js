@@ -10,8 +10,8 @@
             '$stateProvider',
             function ($stateProvider) {
                 $stateProvider
-                    .state('venue', {
-                        url: '/venue',
+                    .state('venues', {
+                        url: '/venues',
                         templateUrl: 'app/venues/venue.html',
                         controller: Venues + '.venueController'
                     });
