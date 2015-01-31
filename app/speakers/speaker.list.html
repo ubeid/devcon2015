@@ -4,11 +4,16 @@
     <p class="lead">
 
     </p>
-    <ol id="speaker" class="list">
-        <li class="list-item list-item-speaker" ng-repeat="entry in entries">
-            <img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}} ({{entry.gsx$nickname.$t}})">
-            <h3 class="">{{entry.gsx$fullname.$t}}<span class="muted"> - {{entry.gsx$nickname.$t}}</span></h3>
-            <p>{{entry.gsx$abstract.$t}}</p>
-        </li>
-    </ol>
+    <div class="proposal" ng-repeat="entry in entries">
+        <div class="proposal-image">
+            <a href="http://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank"><img src="img/speakers/{{entry.gsx$image.$t}}" class="/"></a>
+        </div>
+        <div class="proposal-details">
+            <h2>{{entry.gsx$title.$t}}</h2>
+            <h3>{{entry.gsx$fullname.$t}}</h3>
+            <p>
+                {{entry.gsx$abstract.$t}}
+            </p>
+        </div>
+    </div>
 </div>

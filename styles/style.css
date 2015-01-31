@@ -431,24 +431,25 @@ ul, ol {
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
 }
-.head-banner address {
-    margin-top: 1%;
-    font-size: 160%;
-}
 
-.head-banner time {
-    display: block;
-    border: 0;
-    font-size: 140%;
-    line-height: 140%;
-}
+    .head-banner address {
+        margin-top: 1%;
+        font-size: 160%;
+    }
 
-.head-banner h1 {
-    font-size: 480%;
-    font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
-    line-height: 90%;
-    margin-top: 8%;
-}
+    .head-banner time {
+        display: block;
+        border: 0;
+        font-size: 140%;
+        line-height: 140%;
+    }
+
+    .head-banner h1 {
+        font-size: 480%;
+        font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
+        line-height: 90%;
+        margin-top: 8%;
+    }
 
 .portlouis {
     background: url(/img/portlouis.jpg) no-repeat;
@@ -510,10 +511,39 @@ ul, ol {
     border-color: #777;
 }
 
-#top-nav > li > a:hover {
-    color: #ccc;
-    /*border-bottom: 1px solid #ccc;*/
+ul.navbar-right > li {
+    padding: 0 2px;
 }
+
+ul.navbar-right > li > a {
+    border-width: 0 0 4px 0;
+    border-style: solid;
+}
+ul.navbar-right > li > a:hover {
+    color: #ccc;
+    border-width: 0 0 10px 0;
+}
+
+ul.navbar-right > li > a.venue {
+    border-bottom-color: #C60000;
+}
+
+ul.navbar-right > li > a.agenda {
+    border-bottom-color: #0090B9;
+}
+
+ul.navbar-right > li > a.extra {
+    border-bottom-color: #FBDB0B;
+}
+
+ul.navbar-right > li > a.sponsor {
+    border-bottom-color: #55CC00;
+}
+
+ul.navbar-right > li > a.speaker {
+    border-bottom-color: #C60000;
+}
+
 
 #copyright img {
     margin: 0 2%;
@@ -579,6 +609,69 @@ ul, ol {
 .list-item-speaker img {
     float: left;
     margin-right: 2%;
+}
+
+/* line 69, ../../src/sass/screen.scss */
+.container-speaker {
+    overflow: auto;
+}
+    /* line 72, ../../src/sass/screen.scss */
+    .container-speaker .speaker {
+        text-align: center;
+        -webkit-flex: 1 0 20%;
+        flex: 1 0 20%;
+        vertical-align: middle;
+        color: #FFF;
+        margin-top: 10px;
+    }
+        /* line 80, ../../src/sass/screen.scss */
+        .container-speaker .speaker:hover .speaker-image {
+            border-color: #0F9D58;
+        }
+        /* line 85, ../../src/sass/screen.scss */
+        .container-speaker .speaker:nth-child(7n) {
+            margin-right: 0;
+        }
+        /* line 89, ../../src/sass/screen.scss */
+        .container-speaker .speaker p {
+            font-size: 18px;
+            line-height: 45px;
+            font-weight: 300;
+        }
+    /* line 96, ../../src/sass/screen.scss */
+    .container-speaker .speaker-image {
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        border: 5px solid #4564C2;
+        width: 160px;
+        height: 160px;
+    }
+
+.proposal {
+    margin: 24px 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.proposal-image {
+    -webkit-flex: 1 0 25%;
+    flex: 1 0 25%;
+    margin: auto;
+}
+
+    .proposal-image img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 5px solid #0C7D46;
+    }
+
+.proposal-details {
+    -webkit-flex: 1 0 75%;
+    flex: 1 0 75%;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -675,9 +768,11 @@ ul, ol {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
 .cfp ul, .cfp ol {
     padding: 0 0 0 40px;
 }
+
 .cfp ul {
     list-style: disc;
 }
@@ -700,6 +795,10 @@ ul, ol {
     .lead {
         margin-left: 0;
     }
+}
+
+@media (max-width: 1040px) .container-speaker .speaker {
+    -webkit-flex: 1 0 50%; flex: 1 0 50%;
 }
 
 @media (max-width: 979px) {
