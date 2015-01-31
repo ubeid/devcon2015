@@ -515,34 +515,35 @@ ul.navbar-right > li {
     padding: 0 2px;
 }
 
-ul.navbar-right > li > a {
-    border-width: 0 0 4px 0;
-    border-style: solid;
-}
-ul.navbar-right > li > a:hover {
-    color: #ccc;
-    border-width: 0 0 10px 0;
-}
+    ul.navbar-right > li > a {
+        border-width: 0 0 4px 0;
+        border-style: solid;
+    }
 
-ul.navbar-right > li > a.venue {
-    border-bottom-color: #C60000;
-}
+        ul.navbar-right > li > a:hover {
+            color: #ccc;
+            border-width: 0 0 10px 0;
+        }
 
-ul.navbar-right > li > a.agenda {
-    border-bottom-color: #0090B9;
-}
+        ul.navbar-right > li > a.venue {
+            border-bottom-color: #C60000;
+        }
 
-ul.navbar-right > li > a.extra {
-    border-bottom-color: #FBDB0B;
-}
+        ul.navbar-right > li > a.agenda {
+            border-bottom-color: #0090B9;
+        }
 
-ul.navbar-right > li > a.sponsor {
-    border-bottom-color: #55CC00;
-}
+        ul.navbar-right > li > a.extra {
+            border-bottom-color: #FBDB0B;
+        }
 
-ul.navbar-right > li > a.speaker {
-    border-bottom-color: #C60000;
-}
+        ul.navbar-right > li > a.sponsor {
+            border-bottom-color: #55CC00;
+        }
+
+        ul.navbar-right > li > a.speaker {
+            border-bottom-color: #C60000;
+        }
 
 
 #copyright img {
@@ -647,6 +648,30 @@ ul.navbar-right > li > a.speaker {
         width: 160px;
         height: 160px;
     }
+
+.google-form {
+    position: relative;
+    width: 100%;
+    height: 1550px;
+    overflow: hidden;
+}
+
+    .google-form .form-iframe {
+        width: 100%;
+        min-width: 320px;
+        max-width: 720px;
+        height: 1550px;
+        /* margin-left: -3em; */
+        position: absolute;
+        left: -50px;
+    }
+
+    .google-form .form-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
 
 .proposal {
     margin: 24px 0px;

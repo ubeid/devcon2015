@@ -22,6 +22,15 @@ function (angular, app, Sessions) {
                     templateUrl: 'app/sessions/session.cfp.html'
                 })
 
+                .state('sessions.cfp.propose', {
+                    url: '/submit',
+                    views: {
+                        '@sessions': {
+                            templateUrl: 'app/sessions/session.submit.html'
+                        }
+                    }
+                })
+
                 .state('sessions2', {
                     abstract: true,
                     url: '/sessions',

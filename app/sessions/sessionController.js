@@ -17,6 +17,14 @@
             dayId = $stateParams.dayId;
         }
         sessionService.getList(dayId);
+
+        $scope.propose = function () {
+            $state.go('.propose', $stateParams);
+        };
+
+        $scope.done = function () {
+            $state.go('^', $stateParams);
+        };
     };
 
     module.controller(name, dependencies.concat(controller));
