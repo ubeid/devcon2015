@@ -10,7 +10,8 @@
         './sessions/module.require',
         './speakers/module.require',
         './sponsors/module.require',
-        './venues/module.require'
+        './venues/module.require',
+        './extras/module.require'
     ],
     function (
 		angular,
@@ -24,7 +25,8 @@
         Sessions,
         Speakers,
         Sponsors,
-        Venues
+        Venues,
+        Extras
 	) {
         'use strict';
         var app = angular.module(namespace,
@@ -35,7 +37,8 @@
            Sessions,
            Speakers,
            Sponsors,
-           Venues
+           Venues,
+           Extras
 		]).run(function () {
 		});
         return app;

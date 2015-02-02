@@ -1,6 +1,7 @@
 ﻿define([
 	'angular',
 	'app',
+    './extras/routes',
     './sessions/routes',
     './speakers/routes',
     './sponsors/routes',
