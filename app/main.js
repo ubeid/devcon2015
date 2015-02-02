@@ -6,7 +6,6 @@
         'uirouter': '../libs/angular/angular-ui/0.2.8/angular-ui-router.min',
         'gmap': '../libs/angular/angular-google-maps/2.0.12/angular-google-maps.min',
         'lodash': '../libs/lodash/lodash',
-        'kendoui': '../libs/kendoui/kendo.all.min',
         'jquery': '../libs/jquery/jquery.min',
         'bootstrap': '../libs/bootstrap/bootstrap-3.3.1.min',
         'custom': '../libs/devcon'
@@ -27,9 +26,6 @@
         },
         'gmap': {
             deps: ['angular', 'lodash']
-        },
-        'kendoui': {
-            deps : ['angular', 'jquery']
         }
     }
 });

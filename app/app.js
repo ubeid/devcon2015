@@ -1,7 +1,6 @@
 ﻿define([
 		'angular',
 		'uirouter',
-		'kendoui',
         'gmap',
         'bootstrap',
         'custom',
@@ -16,7 +15,6 @@
     function (
 		angular,
 		uirouter,
-		kendoui,
         gmap,
         bootstrap,
         custom,
@@ -32,7 +30,6 @@
         var app = angular.module(namespace,
 		[
 		   'ui.router',
-		   'kendo.directives',
            'uiGmapgoogle-maps',
            Sessions,
            Speakers,
