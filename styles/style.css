@@ -19,6 +19,7 @@
  * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 
 html {
     font-size: 100%;
@@ -27,7 +28,7 @@ html {
 }
 
 html, button, input, select, textarea {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #222;
 }
 
@@ -35,6 +36,8 @@ body {
     margin: 0;
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /*
@@ -121,8 +124,7 @@ mark {
 
 /* Redeclare monospace font family: h5bp.com/j */
 pre, code, kbd, samp {
-    font-family: monospace, serif;
-    _font-family: 'courier new', monospace;
+    font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
 
@@ -533,21 +535,24 @@ ul, ol {
 }
 
 .head-banner {
-    text-shadow: 0px 2px 3px #000;
+    text-shadow: 0px 1px 2px #000;
     padding-top: 8%;
     background-color: #33363b;
     color: #ccc;
-    font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-bottom: 6%;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+            letter-spacing: -1px;
 }
 
     .head-banner address {
         margin-top: 1%;
         font-size: 160%;
+        color: #fff;
+        font-weight: : 500;
     }
 
     .head-banner time {
@@ -555,17 +560,20 @@ ul, ol {
         border: 0;
         font-size: 140%;
         line-height: 140%;
+        color: #fff;
     }
 
     .head-banner h1 {
         font-size: 480%;
-        font-family: "☺Segoe","Segoe UI",Segoe,Arial,Verdana,sans-serif;
+        font-family: 'Roboto', sans-serif;
         line-height: 90%;
-        margin-top: 8%;
+        margin-top: 3%;
+        color: #fff;
+        letter-spacing: -2px;
     }
 
 .portlouis {
-    background: url(/img/portlouis.jpg) no-repeat;
+    background: url(/img/portlouis_1.jpg) no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -578,6 +586,10 @@ ul, ol {
     margin: 0 auto;
     width: 100%;
     text-align: center;
+}
+
+.navbar {
+    border-bottom: 0px;
 }
 
 .muted {
@@ -851,7 +863,7 @@ ul.navbar-right > li {
         }
 
 .button, #past_editions, .ribbon {
-    font-family: 'ProximaNovaCondensedSemibold';
+    font-family: 'Roboto', sans-serif;
 }
 
 #claim h2, .button, .ribbon, #site_menu ul li {
@@ -1220,7 +1232,9 @@ ul.navbar-right > li {
     *zoom: 1;
 }
 
-
+.container-fluid {
+    max-width: 1170px;
+}
 
 /* ==|== print styles =======================================================
    Print styles.
@@ -1282,4 +1296,10 @@ ul.navbar-right > li {
     h2, h3 {
         page-break-after: avoid;
     }
+}
+
+
+/*====== Fixes ========== */
+.navbar-inverse .navbar-toggle {
+    margin-top: 15px;
 }
