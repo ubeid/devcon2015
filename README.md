@@ -60,7 +60,9 @@ To contribute to this project, you'll need to do a few things first:
 
 1. Fork the project on GitHub
 1. Clone it to your computer
+1. Setup a virtual host or website in your local web server
 1. Fire up your favourite text editor or IDE
 1. Start tweaking and enhancing the website
+1. Browse the index.html in your virtual host
 
 Pull requests are more than welcome.
