@@ -37,6 +37,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /*
@@ -534,7 +535,7 @@ ul, ol {
 }
 
 .head-banner {
-    text-shadow: 0px 2px 3px #000;
+    text-shadow: 0px 1px 2px #000;
     padding-top: 8%;
     background-color: #33363b;
     color: #ccc;
@@ -544,11 +545,14 @@ ul, ol {
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+            letter-spacing: -1px;
 }
 
     .head-banner address {
         margin-top: 1%;
         font-size: 160%;
+        color: #fff;
+        font-weight: : 500;
     }
 
     .head-banner time {
@@ -556,19 +560,20 @@ ul, ol {
         border: 0;
         font-size: 140%;
         line-height: 140%;
+        color: #fff;
     }
 
     .head-banner h1 {
         font-size: 480%;
         font-family: 'Roboto', sans-serif;
         line-height: 90%;
-        margin-top: 8%;
+        margin-top: 3%;
         color: #fff;
         letter-spacing: -2px;
     }
 
 .portlouis {
-    background: url(/img/portlouis.jpg) no-repeat;
+    background: url(/img/portlouis_1.jpg) no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -581,6 +586,10 @@ ul, ol {
     margin: 0 auto;
     width: 100%;
     text-align: center;
+}
+
+.navbar {
+    border-bottom: 0px;
 }
 
 .muted {
@@ -1223,7 +1232,9 @@ ul.navbar-right > li {
     *zoom: 1;
 }
 
-
+.container-fluid {
+    max-width: 1170px;
+}
 
 /* ==|== print styles =======================================================
    Print styles.
@@ -1285,4 +1296,10 @@ ul.navbar-right > li {
     h2, h3 {
         page-break-after: avoid;
     }
+}
+
+
+/*====== Fixes ========== */
+.navbar-inverse .navbar-toggle {
+    margin-top: 15px;
 }
