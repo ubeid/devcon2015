@@ -8,6 +8,7 @@
     var dependencies = ['$scope', '$stateParams', '$state', namespace + '.sessionService'];
     var controller = function ($scope, $stateParams, $state, sessionService) {
 
+        $scope.scrollTo = false;
         $scope.days = [{ id: 1, name: "Thursday" }, { id: 2, name: "Friday" }, { id: 3, name: "Saturday" }]
         $scope.entries = sessionService.entries;
         $scope.selected = {};
@@ -19,10 +20,12 @@
         sessionService.getList(dayId);
 
         $scope.propose = function () {
+            $scope.scrollTo = true;
             $state.go('.propose', $stateParams);
         };
 
         $scope.done = function () {
+            $scope.scrollTo = false;
             $state.go('^', $stateParams);
         };
     };
