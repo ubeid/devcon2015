@@ -856,7 +856,7 @@ ul.navbar-right > li {
 
 .package {
     padding: 10px;
-    background: transparent url(../img/bg_speaker.png) repeat;
+    /*background: transparent url(../img/bg_speaker.png) repeat;*/
     border: 1px solid #dfe2ed;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -869,7 +869,7 @@ ul.navbar-right > li {
         text-align: right;
         padding-bottom: 15px;
         margin-bottom: 15px;
-        background: transparent url(../img/separator_thin.png) no-repeat center bottom;
+        /*background: transparent url(../img/separator_thin.png) no-repeat center bottom;*/
     }
 
     .package ul {
