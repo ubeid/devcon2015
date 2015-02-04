@@ -552,7 +552,7 @@ ul, ol {
         margin-top: 1%;
         font-size: 160%;
         color: #fff;
-        font-weight: : 500;
+        font-weight: 500;
     }
 
     .head-banner time {
@@ -1185,6 +1185,11 @@ ul.navbar-right > li {
     float: none;
     max-width: 40%;
     margin: 0 15px 20px 0;
+}
+.featurette-image.worldmap {
+    display: block;
+    float: none;
+    max-width: 100%;
 }
 
 /* ==|== non-semantic helper classes ========================================
