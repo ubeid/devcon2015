@@ -1190,6 +1190,7 @@ ul.navbar-right > li {
     display: block;
     float: none;
     max-width: 100%;
+    background-color: #0090B9;
 }
 
 /* ==|== non-semantic helper classes ========================================
