@@ -1123,7 +1123,7 @@ ul.navbar-right > li {
 @media (max-width: 767px) {
 
     .head-banner img {
-        visibility: hidden;
+        display: none;
     }
 
     .head-banner h1 {
