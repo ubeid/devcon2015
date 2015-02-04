@@ -545,7 +545,7 @@ ul, ol {
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
-            letter-spacing: -1px;
+    letter-spacing: -1px;
 }
 
     .head-banner address {
@@ -572,8 +572,31 @@ ul, ol {
         letter-spacing: -2px;
     }
 
+.banner {
+    min-height: 120px;
+    height: 20rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 .portlouis {
-    background: url(/img/portlouis.jpg) no-repeat;
+    background: url(/img/portlouis.jpg) no-repeat center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.voilahotel {
+    background: url(/img/voilahotel.jpg) no-repeat center;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.flyingdodo {
+    background: url(/img/flyingdodo.jpg) no-repeat center;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
