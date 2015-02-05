@@ -1,4 +1,4 @@
-Developer Conference 2015
+[Developer Conference 2015](https://github.com/mscraftsman/devcon2015)
 =========================
 
 The website for the Developers Conference 2015 in Mauritius is based on a 
