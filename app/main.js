@@ -2,7 +2,7 @@
     urlArgs : 'bust=v1' + (new Date().getTime()),
     waitSeconds : 20, //make sure it is enough to load all scripts
     paths : {
-        'angular' : '../libs/angular/1.3.11/angular.min',
+        'angular' : '../libs/angular/1.2.28/angular.min',
         'uirouter': '../libs/angular/angular-ui/0.2.8/angular-ui-router.min',
         'gmap': '../libs/angular/angular-google-maps/2.0.12/angular-google-maps.min',
         'lodash': '../libs/lodash/lodash',
