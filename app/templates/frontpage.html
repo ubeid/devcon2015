@@ -32,5 +32,19 @@
     </p>
 </div>
 
+<hr class="featurette-divider" id="front-sponsors">
+<div class="featurette">
+    <h2 class="featurette-heading">Sponsors and Partners<br /><span class="muted">Thanks for their contribution</span></h2>
+    <ul class="thumbnails center">
+        <li class="span4" ng-repeat="entry in sponsors">
+            <div class="thumbnail">
+                <img ng-src="img/sponsors/{{entry.gsx$image.$t}}" alt="{{entry.gsx$company.$t}}">
+                <h3>{{entry.gsx$company.$t}}</h3>
+                <p>{{entry.gsx$slogan.$t}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
 <div ng-include="'./app/templates/mscc.html'"></div>
 <div ng-include="'./app/templates/sponsorship.html'"></div>

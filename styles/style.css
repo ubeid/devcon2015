@@ -640,12 +640,16 @@ ul, ol {
         margin-left: 20px;
     }
 
+.thumbnail > img {
+    max-height: 168px;
+}
+
 .center {
     text-align: center;
 }
 
 .span4 {
-    width: 32%;
+    width: 31.5%;
 }
 
 .span6 {
@@ -1186,6 +1190,7 @@ ul.navbar-right > li {
     max-width: 40%;
     margin: 0 15px 20px 0;
 }
+
 .featurette-image.worldmap {
     display: block;
     float: none;

@@ -11,7 +11,7 @@
         './sponsors/module.require',
         './venues/module.require',
         './extras/module.require'
-    ],
+],
     function (
 		angular,
 		uirouter,
@@ -35,7 +35,8 @@
            Speakers,
            Sponsors,
            Venues,
-           Extras
+           Extras,
+           Templates
 		]).run(function () {
 		});
         return app;

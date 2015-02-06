@@ -5,7 +5,8 @@
     './sessions/routes',
     './speakers/routes',
     './sponsors/routes',
-    './venues/routes'
+    './venues/routes',
+    './templates/routes'
 ],
 function (angular, app) {
     'use strict';
@@ -18,8 +19,8 @@ function (angular, app) {
                 .otherwise('/');
 
             $stateProvider
-                .state('home', {
-                    url: '/',
+                .state('home2', {
+                    url: '/2',
                     templateUrl: 'app/templates/frontpage.html'
                 });
         }
