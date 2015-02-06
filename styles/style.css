@@ -700,6 +700,11 @@ ul.navbar-right > li {
             border-bottom-color: #C60000;
         }
 
+button.agenda {
+    border: 2px solid #0090B9 ;
+    background-color: aqua;
+}
+
 #copyright {
     margin: 0 0 10px;
 }
