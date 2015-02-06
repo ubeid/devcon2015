@@ -8,7 +8,9 @@
     //here list dependencies, e.g. if you need constants then add "namespace + '.foobarConstants'" and declare them in the folder.
     var dependencies = ['$log', '$http'];
     var service = function ($log, $http) {
+        var speakers = [];
         var sponsors = [];
+        var organisers = [];
 
         return {
             getSponsors: function (next) {
@@ -29,7 +31,9 @@
                         next({ error: true, data: data });
                     });
             },
-            sponsors: sponsors
+            speakers: speakers,
+            sponsors: sponsors,
+            organisers: organisers
         };
     };
 

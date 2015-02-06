@@ -8,14 +8,14 @@
     var dependencies = ['$scope', '$stateParams', '$state', namespace + '.indexService'];
     var controller = function ($scope, $stateParams, $state, indexService) {
 
-        //$scope.speakers = speakerService.entries;
-		//speakerService.getList();
+        //$scope.speakers = indexService.speakers;
+        //indexService.getSpeakers();
 
         $scope.sponsors = indexService.sponsors;
         indexService.getSponsors();
 		
-		// $scope.organisers = organiserService.entries;
-		// organiserService.getList();
+        // $scope.organisers = indexService.organisers;
+        // indexService.getOrganisers();
     };
 
     module.controller(name, dependencies.concat(controller));
