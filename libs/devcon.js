@@ -22,6 +22,12 @@
     }
 })();
 
+$(document).on('click', '.navbar-collapse.in', function (e) {
+    if ($(e.target).is('a')) {
+        $(this).collapse('hide');
+    }
+});
+
 //$(document).ready(function () {
 //    // navigation click actions	
 //    $('.scroll-link').on('click', function (event) {

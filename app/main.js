@@ -21,6 +21,9 @@
         'bootstrap': {
             deps: ['jquery']
         },
+        'custom': {
+            deps: ['jquery']
+        },
         'lodash': {
             exports: 'lodash'
         },
