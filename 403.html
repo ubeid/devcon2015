@@ -1,7 +1,9 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Forbidden - Developers Conference 2015 - Mauritius</title>
     <meta name="description" content="The Developers Conference 2015 is a 3-day event going to take place between the 23rd and the 25th of April 2015.
           The Mauritius Software Craftsmanship Community (MSCC) is going to organise this event in corporation with local and international sponsors and partners.">
@@ -15,138 +17,6 @@
     <link rel="stylesheet" href="styles/kendoui/kendo.default.min.css" />-->
     <link rel="stylesheet" href="styles/style.css">
 
-    <style>
-        ::-moz-selection {
-            background: #fe57a1;
-            color: #fff;
-            text-shadow: none;
-        }
-
-        ::selection {
-            background: #fe57a1;
-            color: #fff;
-            text-shadow: none;
-        }
-
-        html {
-            padding: 30px 10px;
-            font-size: 20px;
-            line-height: 1.4;
-            color: #737373;
-            background: #f0f0f0;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-        }
-
-        html, input {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
-
-        .body {
-            max-width: 500px;
-            _width: 500px;
-            padding: 30px 20px 50px;
-            border: 1px solid #b3b3b3;
-            border-radius: 4px;
-            margin: 3em auto 3em;
-            box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
-            background: #fcfcfc;
-        }
-
-        h1 {
-            margin: 0 10px;
-            font-size: 50px;
-            text-align: center;
-        }
-
-            h1 span {
-                color: #bbb;
-            }
-
-        h3 {
-            margin: 1.5em 0 0.5em;
-        }
-
-        p {
-            margin: 1em 0;
-        }
-
-        ul {
-            padding: 0 0 0 40px;
-            margin: 1em 0;
-        }
-
-        .container {
-            max-width: 380px;
-            _width: 380px;
-            margin: 0 auto;
-        }
-        /* google search */
-        #goog-fixurl ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        #goog-fixurl form {
-            margin: 0;
-        }
-
-        #goog-wm-qt, #goog-wm-sb {
-            border: 1px solid #bbb;
-            font-size: 16px;
-            line-height: normal;
-            vertical-align: top;
-            color: #444;
-            border-radius: 2px;
-        }
-
-        #goog-wm-qt {
-            width: 220px;
-            height: 20px;
-            padding: 5px;
-            margin: 5px 10px 0 0;
-            box-shadow: inset 0 1px 1px #ccc;
-        }
-
-        #goog-wm-sb {
-            display: inline-block;
-            height: 32px;
-            padding: 0 10px;
-            margin: 5px 0 0;
-            white-space: nowrap;
-            cursor: pointer;
-            background-color: #f5f5f5;
-            background-image: -webkit-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-            background-image: -moz-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-            background-image: -ms-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-            background-image: -o-linear-gradient(rgba(255,255,255,0), #f1f1f1);
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            *overflow: visible;
-            *display: inline;
-            *zoom: 1;
-        }
-
-            #goog-wm-sb:hover, #goog-wm-sb:focus {
-                border-color: #aaa;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-                background-color: #f8f8f8;
-            }
-
-            #goog-wm-qt:focus, #goog-wm-sb:focus {
-                border-color: #105cb6;
-                outline: 0;
-                color: #222;
-            }
-
-        input::-moz-focus-inner {
-            padding: 0;
-            border: 0;
-        }
-    </style>
-
     <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
     <!-- All JavaScript at the bottom, except this Modernizr build.
          Modernizr enables HTML5 elements & feature detects for optimal performance.
@@ -154,11 +24,16 @@
     <script src="libs/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <div ng-include="'./app/templates/header.html'"></div>
-    </header>
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+         chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <header class="head-banner grid-100"></header>
 
-    <div class="body">
+    <div ng-include="'./app/templates/header.html'"></div>
+
+    <a name="#"></a>
+
+    <div role="main">
         <div class="container">
             <h1>Forbidden <span>:(</span></h1>
             <p>Sorry, but the page you were trying to view is not accessible.</p>
