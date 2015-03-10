@@ -641,7 +641,7 @@ ul, ol {
     }
 
 .thumbnail > img {
-    max-height: 168px;
+    /*max-height: 168px;*/
 }
 
 .center {

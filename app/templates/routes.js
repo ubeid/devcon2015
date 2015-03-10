@@ -3,20 +3,25 @@
         'app',
         './module.require'
 ], function (angular, app, Templates) {
-        'use strict';
+    'use strict';
 
-        var loReturn = app.config([
-            '$stateProvider',
-            '$urlRouterProvider',
-            function ($stateProvider, $urlRouterProvider) {
-                $stateProvider
-                    .state('home', {
-                        url: '/',
-                        templateUrl: 'app/templates/frontpage.html',
-                        controller: Templates + '.indexController'
-                    });
-            }
-        ]);
+    var loReturn = app.config([
+        '$stateProvider',
+        '$urlRouterProvider',
+        function ($stateProvider, $urlRouterProvider) {
+            $stateProvider
+                .state('home', {
+                    url: '/',
+                    templateUrl: 'app/templates/frontpage.html',
+                    controller: Templates + '.indexController'
+                })
 
-        return loReturn;
-    });
+                .state('register', {
+                    url: '/register',
+                    templateUrl: 'app/templates/registration.html'
+                });
+        }
+    ]);
+
+    return loReturn;
+});

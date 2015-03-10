@@ -1,4 +1,65 @@
-﻿<hr class="featurette-divider">
+﻿
+<hr class="featurette-divider" id="front-speakers">
+<div class="featurette">
+    <h2 class="featurette-heading">Speakers<br /><span class="muted">You will be in good hands</span></h2>
+    <ul class="thumbnails center">
+        <li class="span4" ng-repeat="entry in speakers | orderBy: 'gsx$fullname.$t'">
+            <div class="thumbnail">
+                <img ng-hide="entry.gsx$twitter.$t" ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" />
+                <a ng-show="entry.gsx$twitter.$t" href="https://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank">
+                    <img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" />
+                </a>
+                <h3>{{entry.gsx$fullname.$t}}</h3>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<hr class="featurette-divider" id="front-sponsors">
+<div class="featurette">
+    <h2 class="featurette-heading">Sponsors and Partners<br /><span class="muted">Thanks for their contribution</span></h2>
+    <ul class="thumbnails center">
+        <li class="span4" ng-repeat="entry in sponsors">
+            <div class="thumbnail">
+                <a href="{{entry.gsx$url.$t}}/?utm_source=devconmru&utm_medium=banner&utm_campaign=sponsor" target="_blank"><img ng-src="img/sponsors/{{entry.gsx$image.$t}}" alt="{{entry.gsx$partner.$t}}" /></a>
+                <h3>{{entry.gsx$company.$t}}</h3>
+                <p>{{entry.gsx$slogan.$t}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<hr class="featurette-divider" id="front-jobs">
+<div class="featurette">
+    <h2 class="featurette-heading">Job listings<br /><span class="muted">Watch out for offers</span></h2>
+    <ul class="thumbnails center">
+        <li ng-show="!jobs">Currently there are no active job listings... Stay tuned</li>
+        <li ng-repeat="entry in jobs | orderBy: 'date':true">
+            <div class="thumbnail">
+                <a href="{{entry.gsx$url.$t}}/?utm_source=devconmru&utm_medium=banner&utm_campaign=job" target="_blank">
+                    {{entry.gsx$jobtitle.$t}}
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!--
+<hr class="featurette-divider" id="front-orgateam">
+<div class="featurette">
+        <h2 class="featurette-heading">Organisation Team<br /><span class="muted">Who's behind all this?</span></h2>
+        <ul class="thumbnails center">
+            <li class="span4" ng-repeat="entry in orgas">
+                <div class="thumbnail">
+                    <a href="https://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank"><img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" /></a>
+                    <h3>{{entry.gsx$fullname.$t}}</h3>
+                </div>
+            </li>
+        </ul>
+</div>
+-->
+
+<hr class="featurette-divider">
 <div class="featurette">
     <!--<img class="featurette-image pull-right img-circle fixed2" src="img/mscc-touch-icon-192x192.png" alt="" title="" />-->
     <h2 class="featurette-heading">Developers Conference 2015<br /><span class="muted">The First of its Kind in Mauritius</span></h2>
@@ -31,19 +92,4 @@
         Welcome to the first ever Developers Conference in Mauritius!
     </p>
 </div>
-
-<hr class="featurette-divider" id="front-sponsors">
-<div class="featurette">
-    <h2 class="featurette-heading">Sponsors and Partners<br /><span class="muted">Thanks for their contribution</span></h2>
-    <ul class="thumbnails center">
-        <li class="span4" ng-repeat="entry in sponsors">
-            <div class="thumbnail">
-                <a href="{{entry.gsx$url.$t}}/?utm_source=devconmru&utm_medium=banner&utm_campaign=sponsor" target="_blank"><img ng-src="img/sponsors/{{entry.gsx$image.$t}}" alt="{{entry.gsx$partner.$t}}"></a>
-                <h3>{{entry.gsx$company.$t}}</h3>
-                <p>{{entry.gsx$slogan.$t}}</p>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<div ng-include="'./app/templates/mscc.html'"></div>
+<hr class="featurette-divider">
