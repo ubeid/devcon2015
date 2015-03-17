@@ -19,6 +19,11 @@
                 .state('register', {
                     url: '/register',
                     templateUrl: 'app/templates/registration.html'
+                })
+
+                .state('propose', {
+                    url: '/submit',
+                    templateUrl: 'app/sessions/session.submit.html'
                 });
         }
     ]);
