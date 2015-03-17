@@ -6,7 +6,7 @@
     </h2>
     <h3 class="lead">Important Dates</h3>
     <ul>
-        <li>Call for Participation closed: <span class="">28. February 2015 - 23:59 hrs</span></li>
+        <li>Call for Speakers closed: <span class="">28. February 2015 - 23:59 hrs</span></li>
         <li>All proposers have been notified: <span class="">10. March 2015</span></li>
         <li>Registration is open: <span class="">01. March 2015</span></li>
         <li>Registration will close: <span class="">20. April 2015 - 23:59 hrs</span></li>
@@ -29,7 +29,7 @@
             <a ui-sref="sessions.day({dayId:day.id})">{{day.name}}</a>
         </li>
     </ul>
-    <div ui-view autoscroll="false"></div>
+    <div ui-view="days" autoscroll="false"></div>
 </div>
 
 <hr class="featurette-divider" id="activities">
@@ -39,3 +39,7 @@
 
     </p>
 </div>-->
+
+<div ui-view="call" autoscroll="false"></div>
+
+<hr class="featurette-divider">

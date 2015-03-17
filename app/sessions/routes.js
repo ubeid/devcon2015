@@ -26,18 +26,40 @@ function (angular, app, Sessions) {
 
                 .state('sessions.list', {
                     url: '',
-                    templateUrl: 'app/sessions/session.day.html'
+                    views: {
+                        'days': {
+                            templateUrl: 'app/sessions/session.day.html'
+                        },
+                        'call': {
+                            templateUrl: 'app/sessions/session.more.html'
+                        }
+                    }
                 })
 
                 .state('sessions.day', {
                     url: '/{dayId:[0-9]{1}}',
-                    templateUrl: 'app/sessions/session.day.html',
-                    controller: Sessions + '.sessionController'
+                    views: {
+                        'days': {
+                            templateUrl: 'app/sessions/session.day.html',
+                            controller: Sessions + '.sessionController'
+                        },
+                        'call': {
+                            templateUrl: 'app/sessions/session.more.html'
+                        }
+                    }
                 })
 
                 .state('sessions.cfp', {
                     url: '/call',
-                    templateUrl: 'app/sessions/session.cfp.html'
+                    views: {
+                        'days': {
+                            templateUrl: 'app/sessions/session.day.html',
+                            controller: Sessions + '.sessionController'
+                        },
+                        'call': {
+                            templateUrl: 'app/sessions/session.cfp.html'
+                        }
+                    }
                 })
 
                 .state('sessions.cfp.propose', {
