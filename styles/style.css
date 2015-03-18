@@ -19,7 +19,6 @@
  * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
  * 2. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 
 html {
     font-size: 100%;
