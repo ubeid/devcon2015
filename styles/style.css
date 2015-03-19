@@ -824,7 +824,7 @@ button.agenda {
 
     .google-form .form-iframe {
         width: 100%;
-        min-width: 420px;
+        min-width: 440px;
         max-width: 720px;
         height: 1550px;
         /* margin-left: -3em; */
@@ -1213,6 +1213,11 @@ input::-moz-focus-inner {
         margin: -20px;
     }
 
+    .google-form .form-iframe {
+        /*min-width: 410px;*/
+        top: 90px;
+    }
+
     .carousel {
         margin-left: -20px;
         margin-right: -20px;
@@ -1256,6 +1261,15 @@ input::-moz-focus-inner {
         font-size: 18px;
         line-height: 1.5;
     }
+}
+
+@media (max-width: 360px) {
+    
+    .google-form .form-iframe {
+        min-width: 410px;
+        top: 100px;
+    }
+
 }
 
 /* Styles for featurette on desktop*/
