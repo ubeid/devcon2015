@@ -1,7 +1,10 @@
 ﻿<ol class="list">
     <li class="list-item list-item-agenda" ng-repeat="entry in entries">
         <time class="time-slot">{{entry.gsx$time.$t}}</time>
-        <h3 class="time-info time-info-full">{{entry.gsx$title.$t}}<span class="muted"> - {{entry.gsx$speaker.$t}}</span></h3>
+        <h3 class="time-info time-info-full">
+            {{entry.gsx$title.$t}}
+            <span class="muted" ng-show="entry.gsx$speaker.$t"> - {{entry.gsx$speaker.$t}}</span>
+        </h3>
         <p>{{entry.gsx$abstract.$t}}</p>
     </li>
 </ol>
