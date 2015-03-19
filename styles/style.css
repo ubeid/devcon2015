@@ -811,6 +811,9 @@ button.agenda {
     .container-speaker .speaker-image:hover {
         border-color: #55CC00;
     }
+    .container-speaker .no-twitter:hover {
+        border-color: #C60000;
+    }
 
 .google-form {
     position: relative;

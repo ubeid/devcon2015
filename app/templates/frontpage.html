@@ -5,7 +5,7 @@
     <ul class="thumbnails center">
         <li class="span4" ng-repeat="entry in speakers | orderBy: 'gsx$fullname.$t'">
             <div class="container-speaker ">
-                <img ng-hide="entry.gsx$twitter.$t" ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" class="speaker-image" />
+                <img ng-hide="entry.gsx$twitter.$t" ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" class="speaker-image no-twitter" />
                 <a ng-show="entry.gsx$twitter.$t" href="https://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank">
                     <img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" class="speaker-image" />
                 </a>
