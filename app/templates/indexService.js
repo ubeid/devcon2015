@@ -10,6 +10,7 @@
     var service = function ($log, $http) {
         var speakers = [];
         var sponsors = [];
+        var jobs = [];
         var organisers = [];
 
         var getSpeakers = function (next) {
@@ -50,6 +51,27 @@
                 });
         };
 
+        var getJobListings = function (next) {
+            // https://spreadsheets.google.com/feeds/worksheets/1DQCopSIi4sOvWUUEVOD8OlRCGbPikrxcZDdtdQdZYIw/private/full
+            var feedUrl = "https://spreadsheets.google.com/feeds/list/1DQCopSIi4sOvWUUEVOD8OlRCGbPikrxcZDdtdQdZYIw/orx9i5h/public/values?alt=json&callback=JSON_CALLBACK";
+            var feedList = [];
+
+            $http.jsonp(feedUrl)
+                .success(function (data) {
+                    angular.forEach(data.feed.entry, function (entryX) {
+                        if (entryX.gsx$approved.$t === "1") {
+                            feedList.push(entryX);
+                        }
+                    });
+                    angular.copy(feedList, jobs);
+
+                    //next(data);
+                })
+                .error(function (data) {
+                    next({ error: true, data: data });
+                });
+        };
+
         var getOrganisers = function (next) {
             // https://spreadsheets.google.com/feeds/worksheets/1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas/private/full
             var feedUrl = "https://spreadsheets.google.com/feeds/list/1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas/oxe5fi5/public/values?alt=json&callback=JSON_CALLBACK";
@@ -72,9 +94,11 @@
         return {
             getSpeakers: getSpeakers,
             getSponsors: getSponsors,
+            getJobListings: getJobListings,
             getOrganisers: getOrganisers,
             speakers: speakers,
             sponsors: sponsors,
+            jobs: jobs,
             organisers: organisers
         };
     };

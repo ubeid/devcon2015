@@ -14,6 +14,9 @@
         $scope.sponsors = indexService.sponsors;
         indexService.getSponsors();
 		
+        $scope.jobs = indexService.jobs;
+        indexService.getJobListings();
+
          $scope.organisers = indexService.organisers;
          //indexService.getOrganisers();
     };

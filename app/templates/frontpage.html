@@ -3,7 +3,7 @@
 <div class="featurette">
     <h2 class="featurette-heading">Speakers<br /><span class="muted">You will be in good hands</span></h2>
     <ul class="thumbnails center">
-        <li class="span4" ng-repeat="entry in speakers | orderBy: 'gsx$fullname.$t'">
+        <li class="span4" ng-repeat="entry in speakers | orderBy:'gsx$fullname.$t'">
             <div class="container-speaker ">
                 <img ng-hide="entry.gsx$twitter.$t" ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" class="speaker-image no-twitter" />
                 <a ng-show="entry.gsx$twitter.$t" href="https://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank">
@@ -32,14 +32,13 @@
 <hr class="featurette-divider" id="front-jobs">
 <div class="featurette">
     <h2 class="featurette-heading">Job listings<br /><span class="muted">Watch out for offers</span></h2>
-    <ul class="thumbnails center">
-        <li ng-show="!jobs">Currently there are no active job listings... Stay tuned</li>
-        <li ng-repeat="entry in jobs | orderBy: 'date':true">
-            <div class="thumbnail">
-                <a href="{{entry.gsx$url.$t}}/?utm_source=devconmru&utm_medium=banner&utm_campaign=job" target="_blank">
-                    {{entry.gsx$jobtitle.$t}}
-                </a>
-            </div>
+    <ul>
+        <li ng-show="jobs.length == 0">Currently there are no active job listings... Stay tuned</li>
+        <li ng-repeat="entry in jobs | orderBy:['gsx$companyemployer.$t','-gsx$timestamp.$t']">
+            <h3>{{entry.gsx$companyemployer.$t}}</h3>
+            <a href="{{entry.gsx$linktojoblisting.$t}}" target="_blank">
+                {{entry.gsx$jobtitle.$t}}
+            </a>
         </li>
     </ul>
 </div>
@@ -49,7 +48,7 @@
 <div class="featurette">
         <h2 class="featurette-heading">Organisation Team<br /><span class="muted">Who's behind all this?</span></h2>
         <ul class="thumbnails center">
-            <li class="span4" ng-repeat="entry in orgas">
+            <li class="span3" ng-repeat="entry in orgas">
                 <div class="thumbnail">
                     <a href="https://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank"><img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" /></a>
                     <h3>{{entry.gsx$fullname.$t}}</h3>
