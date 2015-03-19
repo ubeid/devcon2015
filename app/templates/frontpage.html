@@ -32,13 +32,15 @@
 <hr class="featurette-divider" id="front-jobs">
 <div class="featurette">
     <h2 class="featurette-heading">Job listings<br /><span class="muted">Watch out for offers</span></h2>
+    <div ng-show="jobs.length == 0">Currently there are no active job listings... Stay tuned</div>
     <ul>
-        <li ng-show="jobs.length == 0">Currently there are no active job listings... Stay tuned</li>
         <li ng-repeat="entry in jobs | orderBy:['gsx$companyemployer.$t','-gsx$timestamp.$t']">
-            <h3>{{entry.gsx$companyemployer.$t}}</h3>
-            <a href="{{entry.gsx$linktojoblisting.$t}}" target="_blank">
-                {{entry.gsx$jobtitle.$t}}
-            </a>
+            <h3>
+                {{entry.gsx$companyemployer.$t}} -
+                <a href="{{entry.gsx$linktojoblisting.$t}}" target="_blank">
+                    {{entry.gsx$jobtitle.$t}}
+                </a>
+            </h3>
         </li>
     </ul>
 </div>

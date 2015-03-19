@@ -10,6 +10,7 @@
 
 /* THANKS */
   Yashvin Awootar - http://www.yashvinblogs.com/
+  Nayar Joolfoo - http://nayarweb.com
   Jochen Kirstätter - http://jochen.kirstaetter.name/
   Nirvan Pagooah - http://nirvan.pagooah.com/
 
