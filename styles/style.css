@@ -1261,6 +1261,15 @@ input::-moz-focus-inner {
         font-size: 18px;
         line-height: 1.5;
     }
+
+    .thumbnails li.span4 {
+        width: initial;
+    }
+
+    .container-speaker .speaker-image {
+        width: 124px;
+        height: 124px;
+    }
 }
 
 @media (max-width: 360px) {
