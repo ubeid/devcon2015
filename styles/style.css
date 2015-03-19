@@ -824,12 +824,16 @@ button.agenda {
 
     .google-form .form-iframe {
         width: 100%;
-        min-width: 320px;
+        min-width: 420px;
         max-width: 720px;
         height: 1550px;
         /* margin-left: -3em; */
         position: absolute;
         left: -50px;
+    }
+
+    .google-form .registration {
+        height: 1380px;
     }
 
     .google-form .form-overlay {
