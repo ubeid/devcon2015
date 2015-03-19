@@ -788,10 +788,6 @@ button.agenda {
         color: #FFF;
         margin-top: 10px;
     }
-        /* line 80, ../../src/sass/screen.scss */
-        .container-speaker .speaker:hover .speaker-image {
-            border-color: #0F9D58;
-        }
         /* line 85, ../../src/sass/screen.scss */
         .container-speaker .speaker:nth-child(7n) {
             margin-right: 0;
@@ -807,9 +803,13 @@ button.agenda {
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
-        border: 5px solid #4564C2;
+        border: 5px solid #0090B9;
         width: 160px;
         height: 160px;
+    }
+    /* line 80, ../../src/sass/screen.scss */
+    .container-speaker .speaker-image:hover {
+        border-color: #55CC00;
     }
 
 .google-form {

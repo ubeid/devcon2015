@@ -4,10 +4,10 @@
     <h2 class="featurette-heading">Speakers<br /><span class="muted">You will be in good hands</span></h2>
     <ul class="thumbnails center">
         <li class="span4" ng-repeat="entry in speakers | orderBy: 'gsx$fullname.$t'">
-            <div class="thumbnail">
-                <img ng-hide="entry.gsx$twitter.$t" ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" />
+            <div class="container-speaker ">
+                <img ng-hide="entry.gsx$twitter.$t" ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" class="speaker-image" />
                 <a ng-show="entry.gsx$twitter.$t" href="https://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank">
-                    <img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" />
+                    <img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" class="speaker-image" />
                 </a>
                 <h3>{{entry.gsx$fullname.$t}}</h3>
             </div>
