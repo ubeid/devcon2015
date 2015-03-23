@@ -21,6 +21,11 @@
                     templateUrl: 'app/templates/registration.html'
                 })
 
+                .state('press', {
+                    url: '/press',
+                    templateUrl: 'app/templates/press.html'
+                })
+
                 .state('propose', {
                     url: '/submit',
                     templateUrl: 'app/sessions/session.submit.html'
