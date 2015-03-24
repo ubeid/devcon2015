@@ -9,7 +9,12 @@
                 <a ng-show="entry.gsx$twitter.$t" href="https://twitter.com/{{entry.gsx$twitter.$t}}" target="_blank">
                     <img ng-src="img/speakers/{{entry.gsx$image.$t}}" alt="{{entry.gsx$fullname.$t}}" title="{{entry.gsx$fullname.$t}}" class="speaker-image" />
                 </a>
-                <h3>{{entry.gsx$fullname.$t}}</h3>
+                <h3>
+                    {{entry.gsx$fullname.$t}}
+                    <a ng-show="entry.gsx$link.$t" href="{{entry.gsx$link.$t}}" target="_blank" class="link"></a>
+                    <a ng-show="entry.gsx$linkedin.$t" href="{{entry.gsx$linkedin.$t}}" target="_blank" class="linkedin"></a>
+                    <a ng-show="entry.gsx$github.$t" href="{{entry.gsx$github.$t}}" target="_blank" class="github"></a>
+                </h3>
             </div>
         </li>
     </ul>
