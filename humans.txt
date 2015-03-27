@@ -10,9 +10,12 @@
 
 /* THANKS */
   Yashvin Awootar - http://www.yashvinblogs.com/
+  Humeira Diljore - http://echdee.me
   Nayar Joolfoo - http://nayarweb.com
   Jochen Kirstätter - http://jochen.kirstaetter.name/
+  Derek Lee Chee Sang
   Nirvan Pagooah - http://nirvan.pagooah.com/
+  Shiivaa Veeramah
 
 /* SITE */
   Standards: HTML5, CSS3
