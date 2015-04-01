@@ -674,7 +674,7 @@ ul.navbar-right > li {
         border-style: solid;
     }
 
-        ul.navbar-right > li > a:hover {
+        ul.navbar-right > li > a:hover, ul.navbar-right > li > a.active {
             color: #ccc;
             border-width: 0 0 10px 0;
         }
