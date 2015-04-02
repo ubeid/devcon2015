@@ -13,17 +13,18 @@
         return {
             getList: function (next) {
                 // https://spreadsheets.google.com/feeds/worksheets/1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas/private/full
-                var feedUrl = "https://spreadsheets.google.com/feeds/list/1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas/od6/public/values?alt=json&callback=JSON_CALLBACK";
+                var key = "1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas";
+                var sheet = "od6";
+
                 switch (next) {
                     case "2":
-                        feedUrl = "https://spreadsheets.google.com/feeds/list/1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas/otxbfq6/public/values?alt=json&callback=JSON_CALLBACK";
+                        sheet = "otxbfq6";
                         break;
                     case "3":
-                        feedUrl = "https://spreadsheets.google.com/feeds/list/1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas/o3xkksm/public/values?alt=json&callback=JSON_CALLBACK";
+                        sheet = "o3xkksm";
                         break;
-                    default:
-                        feedUrl = "https://spreadsheets.google.com/feeds/list/1FVheiBFTNSvR0HS89HamlBYL1lo-LExPTlKhnnKVlas/od6/public/values?alt=json&callback=JSON_CALLBACK";
                 }
+                var feedUrl = "https://spreadsheets.google.com/feeds/list/" + key + "/" + sheet + "/public/values?alt=json&callback=JSON_CALLBACK";
                 var feedList = [];
 
                 $http.jsonp(feedUrl)
