@@ -745,8 +745,9 @@ button.agenda {
     line-height: 140%;
 }
 
-.list-item {
+.list-item, .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
     padding: 1%;
+    border-top: none;
     border-bottom: 1px solid #999;
     text-align: left;
 }
@@ -773,6 +774,21 @@ button.agenda {
 .list-item-speaker img {
     float: left;
     margin-right: 2%;
+}
+
+.odd {
+    background-color: #ccc;
+}
+.even {
+    background-color: #f1f1f1;
+}
+.agenda-time {
+    width: 18%;
+    padding: 10px 0px 10px 2px;
+}
+.agenda-room {
+    width: 26%;
+    padding: 10px 0px;
 }
 
 /* line 69, ../../src/sass/screen.scss */

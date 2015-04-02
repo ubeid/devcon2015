@@ -1,12 +1,23 @@
-﻿<ol class="list">
-    <li class="list-item list-item-agenda" ng-repeat="entry in entries">
-        <time class="time-slot">{{entry.gsx$time.$t}}</time>
-        <h3 class="time-info time-info-full">
-            {{entry.gsx$title.$t}}
-            <span class="muted" ng-show="entry.gsx$speaker.$t"> - {{entry.gsx$speaker.$t}}</span>
-        </h3>
-		<!--
-        <p>{{entry.gsx$abstract.$t}}</p>
-		-->
-    </li>
-</ol>
+﻿<table class="table">
+    <thead>
+        <tr class="list-item list-item-agenda">
+            <td class="agenda-time">Time \ Room</td>
+            <td class="agenda-room">Educator 1</td>
+            <td class="agenda-room">Educator 2</td>
+            <td class="agenda-room">Accelerator</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="time in getTimes()" class="list-item list-item-agenda" ng-class="{even: $even, odd: $odd}">
+            <td><time>{{time}}</time></td>
+            <td ng-repeat="entry in getEntries(entries, time)" colspan="{{getSpan(time)}}">
+                <h3>
+                    {{entry.gsx$title.$t}}
+                    <span class="{{entry.gsx$level.$t | lowercase}}"></span>
+                    <span class="language-{{entry.gsx$language.$t | lowercase}}"></span>
+                    <span class="muted" ng-show="entry.gsx$speaker.$t"> - {{entry.gsx$speaker.$t}}</span>
+                </h3>
+            </td>
+        </tr>
+    </tbody>
+</table>
