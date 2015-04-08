@@ -8,6 +8,7 @@
         'lodash': '../libs/lodash/lodash',
         'jquery': '../libs/jquery/jquery.min',
         'bootstrap': '../libs/bootstrap/bootstrap-3.3.1.min',
+		'uibootstrap': '../libs/angular/ui-bootstrap-tpls-0.12.1.min',
         'custom': '../libs/devcon'
     },
     shim : {
@@ -20,6 +21,9 @@
         },
         'bootstrap': {
             deps: ['jquery']
+        },
+        'uibootstrap': {
+            deps: ['angular', 'bootstrap']
         },
         'custom': {
             deps: ['jquery']

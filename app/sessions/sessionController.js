@@ -5,8 +5,8 @@
     'use strict';
     var name = namespace + '.sessionController';
 
-    var dependencies = ['$scope', '$stateParams', '$state', namespace + '.sessionService'];
-    var controller = function ($scope, $stateParams, $state, sessionService) {
+    var dependencies = ['$scope', '$stateParams', '$state', '$modal', namespace + '.sessionService'];
+    var controller = function ($scope, $stateParams, $state, $modal, sessionService) {
 
         $scope.scrollTo = false;
         $scope.days = [{ id: 1, name: "Thursday" }, { id: 2, name: "Friday" }, { id: 3, name: "Saturday" }]
@@ -52,6 +52,38 @@
             })
             return span;
         }
+
+        var modalOptions = {
+            closeButtonText: 'OK',
+            entry: [],
+            modalFade: true,
+            resolve: {
+                //entry: function () {
+                //    return $scope.entries[index];
+                //}
+            },
+            size: 'lg',
+            templateUrl: "app/templates/modalDialog.html"
+        };
+
+        if (!modalOptions.controller) {
+            modalOptions.controller = function ($scope, $modalInstance) {
+                $scope.modalOptions = modalOptions;
+                $scope.ok = function (result) {
+                    $modalInstance.close(result);
+                };
+                $scope.close = function (result) {
+                    $modalInstance.dismiss('cancel');
+                };
+            }
+        }
+
+        $scope.showDetails = function (entry) {
+            if (entry.gsx$abstract.$t) {
+                modalOptions.entry = entry;
+                var instance = $modal.open(modalOptions);
+            }
+        };
 
         $scope.propose = function () {
             $scope.scrollTo = true;

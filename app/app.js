@@ -3,6 +3,7 @@
 		'uirouter',
         'gmap',
         'bootstrap',
+		'uibootstrap',
         'custom',
         './namespace',
         './templates/module.require',
@@ -17,6 +18,7 @@
 		uirouter,
         gmap,
         bootstrap,
+		uibootstrap,
         custom,
         namespace,
         Templates,
@@ -31,6 +33,7 @@
 		[
 		   'ui.router',
            'uiGmapgoogle-maps',
+		   'ui.bootstrap',
            Sessions,
            Speakers,
            Sponsors,
