@@ -515,6 +515,25 @@ ul, ol {
     width: 98%;
 }
 
+h3.dialog {
+    cursor: pointer;
+}
+
+.modal {
+    display: block;
+}
+
+.modal-body:before,
+.modal-body:after {
+    display: table;
+    content: " ";
+}
+
+.modal-header:before,
+.modal-header:after {
+    display: table;
+    content: " ";
+}
 
 #sponsorship .column_4 {
     margin-top: 15px;
@@ -745,7 +764,7 @@ button.agenda {
     line-height: 140%;
 }
 
-.list-item, .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+.list-item, .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     padding: 1%;
     border-top: none;
     border-bottom: 1px solid #999;
@@ -779,17 +798,37 @@ button.agenda {
 .odd {
     background-color: #ccc;
 }
+
 .even {
     background-color: #f1f1f1;
 }
+
 .agenda-time {
     width: 18%;
     padding: 10px 0px 10px 2px;
 }
+
 .agenda-room {
     width: 26%;
     padding: 10px 0px;
 }
+
+span.language {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 24px 24px;
+}
+
+    span.language.en {
+        background-image: url(../img/icon_en.png);
+    }
+
+    span.language.fr {
+        background-image: url(../img/icon_fr.png);
+    }
 
 /* line 69, ../../src/sass/screen.scss */
 .container-speaker {
@@ -823,10 +862,11 @@ button.agenda {
         width: 160px;
         height: 160px;
     }
-    /* line 80, ../../src/sass/screen.scss */
-    .container-speaker .speaker-image:hover {
-        border-color: #55CC00;
-    }
+        /* line 80, ../../src/sass/screen.scss */
+        .container-speaker .speaker-image:hover {
+            border-color: #55CC00;
+        }
+
     .container-speaker .no-twitter:hover {
         border-color: #C60000;
     }
@@ -1289,12 +1329,11 @@ input::-moz-focus-inner {
 }
 
 @media (max-width: 360px) {
-    
+
     .google-form .form-iframe {
         min-width: 410px;
         top: 100px;
     }
-
 }
 
 /* Styles for featurette on desktop*/
