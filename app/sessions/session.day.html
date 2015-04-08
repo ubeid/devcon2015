@@ -11,7 +11,7 @@
         <tr ng-repeat="time in getTimes()" class="list-item list-item-agenda" ng-class="{even: $even, odd: $odd}">
             <td><time>{{time}}</time></td>
             <td ng-repeat="entry in getEntries(entries, time)" colspan="{{getSpan(time)}}">
-                <h3 class="dialog" ng-click="showDetails(entry)">
+                <h3 ng-class="{dialog: entry.gsx$abstract.$t}" ng-click="showDetails(entry)">
                     {{entry.gsx$title.$t}}
                     <span class="muted" ng-show="entry.gsx$speaker.$t"> - {{entry.gsx$speaker.$t}}</span>
                     <span class="ribbon {{entry.gsx$level.$t | lowercase}}" ng-show="entry.gsx$level.$t">{{entry.gsx$level.$t}}</span>
