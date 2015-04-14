@@ -1011,6 +1011,9 @@ span.language {
 .ribbon.expert {
     background-color: #C60000;
 }
+.ribbon.vendor {
+    background-color: #0090B9;
+}
 
 .ribbon .diamond {
     background-color: #17213a;
