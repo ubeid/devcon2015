@@ -15,7 +15,7 @@ from cloud infrastructures like Google Spreadsheets. The data transfer is done
 in JSON, and could be used for other platforms like smartphone apps, too.
 
 ## Using Google Docs for management of lists
-They decision to use Google Docs, here Sheets in particular, was easy.
+The decision to use Google Docs, here Sheets in particular, was easy.
 
 1. It eliminates any kind of security issues regarding the implementation 
 of an administrative back-end for the website.
